@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+         input:invalid {
+            border: 2px dashed red;
+        }
+    
+        input:valid {
+            border: 2px solid green;
+        }
+
+        textarea:invalid {
+            border: 2px dashed red;
+        }
+
+        textarea:valid {
+            border: 2px solid green;
+        }
+
+        /* Additional styling */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <section id="Feedback">
+     
+            <h1>Please fill the Feedback Form</h1>
+            <form>
+                <fieldset>
+                    <legend>Name&Email</legend>
+                    <label for="fname">Firstname:</label>
+                    <input type="text" name="fname" id="fname" required><br>
+                    <label for="lname">Lastname:</label>
+                    <input type="text" name="lname" id="lname" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Subject&Message</legend>
+                    <label for="stext">Subject</label>
+                   <input type="text" name="stext" id="stext" required><br>
+                  <label> Message</label><br>
+                  <textarea rows="15" cols="50" required></textarea>
+                </fieldset>
+           
+               
+                <button type="submit">Submit</button><br>
+            </form>
+        </section>
+</body>
+</html>
